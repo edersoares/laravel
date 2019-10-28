@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "edersoares/laravel-plug-and-play": "^1.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/horizon": "^3.4",
@@ -31,6 +32,11 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "merge-plugin": {
+            "include": [
+                "packages/*/*/composer.json"
+            ]
         }
     },
     "autoload": {
